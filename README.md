@@ -2,15 +2,20 @@
 simple fish function to run commands on cd
 
 ## Installation
+```sh
+fisher install marcelarie/rund
+```
 
 ## Usage
-`rund` will check for a `.rundir` file in the current directory and source the
+`rund` will check automatically for a `.rundir` file in the current directory and source the
 commands in it. 
 
-First you need to init `rund` by running the following command:
+If you did not use a plugin manager to install `rund`, you will need to source
+it in your `config.fish` file.
 ```sh
-rund
+source /path/to/rund.fish
 ```
+
 
 Lets say you have a `.rundir` file in your project directory with the following content:
 ```sh
