@@ -3,3 +3,5 @@ function init --on-event fish_prompt
         source .rundir
     end
 end
+
+init
