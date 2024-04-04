@@ -1,6 +1,9 @@
 # rund
 simple fish function to run commands on cd
 
+https://github.com/marcelarie/rund/assets/62728887/3f8fc08f-cd3d-4e17-a113-fca79e115af3
+
+
 ## Installation
 ```sh
 fisher install marcelarie/rund
