@@ -1,6 +1,12 @@
 #!/bin/bash
 
-DIR="/usr/local/share/rund/scripts"
+# Try to get the directory of the script
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
+
+# If the scripts directory does not exist in the current directory, use the /usr/local/share directory
+if [ ! -d "$DIR/scripts" ]; then
+	DIR="/usr/local/share/rund/scripts"
+fi
 
 if [ "$1" == "bash" ]; then
 	source "$DIR/bash/init.sh"
