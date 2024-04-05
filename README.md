@@ -17,8 +17,7 @@ For Bash and Zsh, clone the repository and run the install script:
 ```sh
 git clone https://github.com/marcelarie/rund.git
 cd rund
-./install.sh
-sh
+sudo ./install.sh
 ```
 
 ## Usage
