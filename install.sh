@@ -11,6 +11,7 @@ mkdir -p "$INSTALL_DIR"
 
 # Copy the scripts to the installation directory
 if cp -r "$DIR"/scripts "$INSTALL_DIR"; then
+	cp -r "$DIR"/scripts/fish/conf.d "$DIR"/fish
 	if cp "$DIR"/rund.sh /usr/local/bin/rund; then
 		if chmod +x /usr/local/bin/rund; then
 			echo "Installation successful!"
