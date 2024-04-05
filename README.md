@@ -62,6 +62,8 @@ source path_to_repo/conf.d/rund.fish
 Lets say you have a `.rundir` file in your project directory with the following content:
 
 ```sh
+#!/usr/bin/env bash
+
 echo "                🏃"
 sleep 0.1
 clear

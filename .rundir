@@ -1,2 +1,4 @@
+#!/usr/bin/env bash
+
 echo "Star this repo if you didn't do it yet!"
 echo "https://github.com/marcelarie/rund"
