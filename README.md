@@ -1,6 +1,6 @@
 # rund
 
-A simple function to run commands on directory change for Fish, Bash, and Zsh.
+A simple shell hook to run commands on directory change for Fish, Bash, and Zsh.
 
 https://github.com/marcelarie/rund/assets/62728887/3f8fc08f-cd3d-4e17-a113-fca79e115af3
 
