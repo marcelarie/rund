@@ -8,7 +8,9 @@ if cp "$DIR"/rund.sh /usr/local/bin/rund; then
 		echo "Installation successful!"
 	else
 		echo "Failed to make /usr/local/bin/rund executable."
+		echo "Try running the script as root."
 	fi
 else
 	echo "Failed to copy rund.sh to /usr/local/bin."
+	echo "Try running the script as root."
 fi
