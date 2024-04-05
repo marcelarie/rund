@@ -3,12 +3,13 @@
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 
 if [ "$1" == "bash" ]; then
-	source "$DIR/bash/init.sh"
+	source "$DIR/scripts/bash/init.sh"
 elif [ "$1" == "zsh" ]; then
-	source "$DIR/zsh/init.sh"
+	source "$DIR/scripts/zsh/init.sh"
 elif [ "$1" == "fish" ]; then
-	echo "source $DIR/conf.d/rund.fish"
+	echo "source $DIR/scripts/conf.d/rund.fish"
 else
-echo "Invalid argument. Please specify one of the following shells:"
-echo "'bash', 'zsh', or 'fish'."
+	printf "Usage: rund [shell]\n\n"
+	echo "Invalid argument. Please specify one of the following shells:"
+	ls "$DIR"/scripts | sed 's/\..*//' | sed 's/^/- /'
 fi
