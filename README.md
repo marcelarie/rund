@@ -52,13 +52,6 @@ source $(rund zsh)
 `rund` will check automatically for a `.rundir` file in the current directory
 and source the commands in it.
 
-If you did not use a plugin manager to install `rund`, you will need to source
-it in your `config.fish` file.
-
-```sh
-source path_to_repo/conf.d/rund.fish
-```
-
 Lets say you have a `.rundir` file in your project directory with the following content:
 
 ```sh
