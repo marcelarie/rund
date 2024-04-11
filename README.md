@@ -8,13 +8,13 @@ https://github.com/marcelarie/rund/assets/62728887/3f8fc08f-cd3d-4e17-a113-fca79
 
 For Fish:
 
-```sh
+```shell
 fisher install marcelarie/rund
 ```
 
 For Bash and Zsh, clone the repository and run the install script:
 
-```sh
+```shell
 git clone https://github.com/marcelarie/rund.git
 cd rund
 sudo ./install.sh
@@ -31,21 +31,21 @@ it in your shell.
 For Fish:
 Add the following line to your `config.fish` file:
 
-```sh
+```shell
 rund fish | source
 ```
 
 For Bash:
 Add the following line to your `.bashrc` file:
 
-```sh
+```shell
 source rund bash
 ```
 
 For Zsh:
 Add the following line to your `.zshrc` file:
 
-```sh
+```shell
 source $(rund zsh)
 ```
 
@@ -54,7 +54,7 @@ and source the commands in it.
 
 Lets say you have a `.rundir` file in your project directory with the following content:
 
-```sh
+```bash
 #!/usr/bin/env bash
 
 echo "                🏃"
