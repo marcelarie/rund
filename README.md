@@ -99,7 +99,6 @@ Enjoy!
 ## To Do
 
 - [ ] Don't run the commands if the `.rundir` file has not been approved by the user.
-direnv example: 
-```
-direnv: error .envrc is blocked. Run `direnv allow` to approve its content
-```
+    - [x] fish
+    - [ ] bash
+    - [ ] zsh
