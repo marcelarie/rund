@@ -17,7 +17,7 @@ if [ "$1" == "allow" ]; then
 		allow_file="/tmp/${parsed_pwd}_allow_rund"
 
 		if [ ! -f "$allow_file" ]; then
-			echo "Allowing scripts to be run in current directory."
+			echo "Allowing .rundir file to run in current directory."
 			touch "$allow_file"
 			exit 0
 		fi

@@ -1,7 +1,8 @@
 function init --on-event fish_prompt
     if test -f .rundir
-        set parsed_pwd (string replace "/" "_" $PWD)
-        if not test -f /tmp/$parsed_pwd"allow_rund"
+        set -l parsed_pwd (string replace --all "/" "_" $PWD)
+
+        if not test -f /tmp/$parsed_pwd"_allow_rund"
             echo 'rund: error .rundir is blocked by default.'
             echo 'Run `rund allow` to approve its content'
             return
