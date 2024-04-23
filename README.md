@@ -95,3 +95,11 @@ Of course, this is a very simple example. You can have more complex commands
 for example to start a development server, run tests, etc.
 
 Enjoy!
+
+## To Do
+
+- [ ] Don't run the commands if the `.rundir` file has not been approved by the user.
+direnv example: 
+```
+direnv: error .envrc is blocked. Run `direnv allow` to approve its content
+```
