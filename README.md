@@ -98,10 +98,12 @@ Enjoy!
 
 ## To Do
 
-- [ ] Fix .rundir file running in non user shells For example when using pbcopy 
+- [ ] Fix .rundir file running in non user shells For example when using pbcopy
       inside nvim.
 
 - [ ] Don't run the commands if the `.rundir` file has not been approved by the user.
-    - [x] fish
-    - [ ] bash
-    - [ ] zsh
+  - [ ] Don't run the info message if the `.rundir` file has not been approved by 
+          the user. the user every time the shell runs a command.
+  - [x] Implement in fish
+  - [ ] Implement in bash
+  - [ ] Implement in zsh
