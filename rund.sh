@@ -8,6 +8,24 @@ if [ ! -d "$DIR/scripts" ]; then
 	DIR="/usr/local/share/rund/scripts"
 fi
 
+if [ "$1" == "allow" ]; then
+	if [ ! -f .rundir ]; then
+		echo "No .rundir file found in current directory."
+		exit 1
+	else
+		parsed_pwd=${PWD////_}
+		allow_file="/tmp/${parsed_pwd}_allow_rund"
+
+		if [ ! -f "$allow_file" ]; then
+			echo "Allowing scripts to be run in current directory."
+			touch "$allow_file"
+			exit 0
+		fi
+		echo "The .rundir file is already allowed to run."
+	fi
+	exit 0
+fi
+
 if [ "$1" == "bash" ]; then
 	source "$DIR/bash/init.sh"
 elif [ "$1" == "zsh" ]; then
