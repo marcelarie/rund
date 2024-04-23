@@ -23,7 +23,7 @@ sudo ./install.sh
 ## Usage
 
 `rund` will automatically check for a `.rundir` file in the current directory
-and source the commands in it.
+and source the commands in it, if the user already approved it with `rund allow`.
 
 If you did not use a plugin manager to install `rund`, you will need to source
 it in your shell.
@@ -90,6 +90,12 @@ time, you will have a beautiful running emoji in your terminal.
 
 `rund` keeps track of the directories and shell session to run the commands
 only the first time you `cd` into the directory on that session.
+
+If you are concerned about security, don't worry. `rund` will prompt you to
+allow the commands in the `.rundir` file before running them. 
+
+Simply type `rund allow` in the root of the project directory and the commands 
+will be executed from now on.
 
 Of course, this is a very simple example. You can have more complex commands
 for example to start a development server, run tests, etc.
