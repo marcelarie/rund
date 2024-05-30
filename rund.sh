@@ -9,19 +9,19 @@ if [ ! -d "$DIR/scripts" ]; then
 fi
 
 if [ "$1" == "allow" ]; then
-	if [ ! -f .rundir ]; then
-		echo "No .rundir file found in current directory."
+	if [ ! -f Runfile ]; then
+		echo "No Runfile file found in current directory."
 		exit 1
 	else
 		parsed_pwd=${PWD////_}
 		allow_file="/tmp/${parsed_pwd}_allow_rund"
 
 		if [ ! -f "$allow_file" ]; then
-			echo "Allowing .rundir file to run in current directory."
+			echo "Allowing Runfile file to run in current directory."
 			touch "$allow_file"
 			exit 0
 		fi
-		echo "The .rundir file is already allowed to run."
+		echo "The Runfile file is already allowed to run."
 	fi
 	exit 0
 fi

@@ -22,7 +22,7 @@ sudo ./install.sh
 
 ## Usage
 
-`rund` will automatically check for a `.rundir` file in the current directory
+`rund` will automatically check for a `Runfile` file in the current directory
 and source the commands in it, if the user already approved it with `rund allow`.
 
 If you did not use a plugin manager to install `rund`, you will need to source
@@ -49,10 +49,10 @@ Add the following line to your `.zshrc` file:
 source $(rund zsh)
 ```
 
-`rund` will check automatically for a `.rundir` file in the current directory
+`rund` will check automatically for a `Runfile` file in the current directory
 and source the commands in it.
 
-Lets say you have a `.rundir` file in your project directory with the following content:
+Lets say you have a `Runfile` file in your project directory with the following content:
 
 ```bash
 #!/usr/bin/env bash
@@ -92,7 +92,7 @@ time, you will have a beautiful running emoji in your terminal.
 only the first time you `cd` into the directory on that session.
 
 If you are concerned about security, don't worry. `rund` will prompt you to
-allow the commands in the `.rundir` file before running them. 
+allow the commands in the `Runfile` file before running them. 
 
 Simply type `rund allow` in the root of the project directory and the commands 
 will be executed from now on.
@@ -104,11 +104,11 @@ Enjoy!
 
 ## To Do
 
-- [ ] Fix .rundir file running in non user shells For example when using pbcopy
+- [ ] Fix Runfile file running in non user shells For example when using pbcopy
       inside nvim.
 
-- [ ] Don't run the commands if the `.rundir` file has not been approved by the user.
-  - [ ] Don't run the info message if the `.rundir` file has not been approved by 
+- [ ] Don't run the commands if the `Runfile` file has not been approved by the user.
+  - [ ] Don't run the info message if the `Runfile` file has not been approved by 
           the user. the user every time the shell runs a command.
   - [x] Implement in fish
   - [ ] Implement in bash
